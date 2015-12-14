@@ -1,6 +1,7 @@
 $white: #ffffff;
 $highlight: #d2674e;
 $dark: #22292e;
+$light: #edeff5;
 #podcasts {
 	padding-bottom: 3rem;
 	ul {
@@ -181,7 +182,7 @@ $dark: #22292e;
 					color: $dark;
 					text-decoration: none;
 					&:hover {
-						color: &highlight;
+						color: $highlight;
 
 					}
 				}
