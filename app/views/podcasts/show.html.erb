@@ -1,0 +1,94 @@
+<div id="podcast_show">
+    <div id="show_banner">
+      <div class="wrapper_skinny">
+        <h1><%= @podcasts.title %></h1>
+        <p class="description"><%= @podcasts.description %></p>
+        <% unless @podcasts.itunes.blank? %>
+          <a href="<%= @podcasts.itunes %>" class="subcribe_link">iTunes</a>
+        <% end %>
+        <% unless @podcasts.stitcher.blank? %>
+          <a href="<%= @podcasts.stitcher %>" class="subcribe_link">Sticher</a>
+        <% end %>
+        <% unless @podcasts.podbay.blank? %>
+          <a href="<%= @podcasts.podbay %>" class="subcribe_link">PodBay</a>
+        <% end %>
+      </div>
+      
+    </div>
+    <div id="breadcrumb">
+      <%= link_to podcasts_path do %>
+         All Pocasts
+        <span>/</span>
+        The Rocketship Podcast
+       
+      <% end %>
+      
+    </div>
+
+    <div id="episodes">
+      <div class="wrapper_skinny">
+        <ul class="cf">
+          <li class="cf">
+            <div class="episode_thumbnail">
+              <a href="episodes.html">
+               <img src="images/iki.jpg" alt="Ricky Januari">
+              </a>
+            </div>
+            <div class="episde_overview">
+              <h2><a href="episodes.html">How to Pull off 12 (Well Executed) Startups in 12 Month </a></h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur impedit, alias consequatur debitis,
+              </p>
+            </div>
+          </li>
+          <li class="cf">
+            <div class="episode_thumbnail">
+              <a href="episodes.html">
+               <img src="images/iki.jpg" alt="Ricky Januari">
+              </a>
+            </div>
+            <div class="episde_overview">
+              <h2><a href="episodes.html">How to Pull off 12 (Well Executed) Startups in 12 Month </a></h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur impedit, alias consequatur debitis,
+              </p>
+            </div>
+          </li>
+          <li class="cf">
+            <div class="episode_thumbnail">
+              <a href="episodes.html">
+               <img src="images/iki.jpg" alt="Ricky Januari">
+              </a>
+            </div>
+            <div class="episde_overview">
+              <h2><a href="episodes.html">How to Pull off 12 (Well Executed) Startups in 12 Month </a></h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur impedit, alias consequatur debitis,
+              </p>
+            </div>
+          </li>
+          <li class="cf">
+            <div class="episode_thumbnail">
+              <a href="episodes.html">
+               <img src="images/iki.jpg" alt="Ricky Januari">
+              </a>
+            </div>
+            <div class="episde_overview">
+              <h2><a href="episodes.html">How to Pull off 12 (Well Executed) Startups in 12 Month </a></h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur impedit, alias consequatur debitis,
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <div class="pagination">
+      <span class="previous_page disabled">Previous</span>
+      <em class="current">1</em>
+      <a href="">2</a>
+      <a href="#" class="next_page">Next</a>
+  </div>
