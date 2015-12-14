@@ -105,14 +105,14 @@ body {
 }
 
 .podcasts_banner {
-	background-image: url(../images/homepage_background.jpg);
+	background-image: image-url("homepage_background.jpg");
 }
 
 .sign_in_banner {
-	background-image: url(../images/homepage_background.jpg);
+	background-image: image-url("homepage_background.jpg");;
 }
 .sign_up_banner {
-	background-image: url(../images/homepage_background.jpg);
+	background-image: image-url("homepage_background.jpg");;
 }
 
 .pagination:before, .pagination:after {
@@ -180,3 +180,4 @@ textarea {
 }
 @import 'normalize';
 @import 'welcome';
+@import 'podcasts';
